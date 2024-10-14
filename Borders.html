@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bordes and Padding Practice</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1." />
+    <title>Practicing Alignment with Flexbox</title>
     <style>
+      * {
+        box-sizing: border-box;
+        margin: ; /* Remove default margins */
+        padding: ; /* Remove default padding */
+      }
 
-        *{
-            box-sizing: border-box;
-        }
-        
-        #container{
-            text-align: center;
-            box-sizing: border-box;
-            line-height: normal;
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        max-width: 960px;
+        margin: auto; /* Center body content */
+        text-align: center; /* Center text */
+      }
 
-        .box{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 16px;
-            background:#dcdddd;
-            border: 2px black solid;
-            border-radius: 3px;
-            width: 400px;
-            padding: 20px;
-            margin: auto;
-            margin-bottom: 10px;
-            text-align: justify;
-        }
+      .container {
+        display: flex;
+        justify-content: center; /* Center boxes horizontally */
+        flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+        margin: 20px; /* Margin for spacing */
+      }
 
-        h1{
-            color: red;
-            text-align: center;
-        }
-    
+      .box {
+        border: 1px red solid;
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        text-align: center;
+        padding: 80px; /* Adjusted padding for better alignment */
+        margin: 10px; /* Added margin for spacing */
+        box-shadow: 2px 2px 5px rgba(, , , 0.2); /* Optional shadow for better visual */
+      }
     </style>
-</head>
-<body>
-    <div id="container">
-        <div class="box" id="box-1">
-            <h1>Heading 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores soluta distinctio aliquam animi neque atque dolorum nisi delectus eos?</p>
-        </div>
-        <div class="box" id="box-2">
-            <h1>Heading 2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores soluta distinctio aliquam animi neque atque dolorum nisi delectus eos?</p>
-        </div>
-        <div class="box" id="box-3">
-            <h1>Heading 3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores soluta distinctio aliquam animi neque atque dolorum nisi delectus eos?</p>
-        </div>
+  </head>
+  <body>
+    <h1>How To Center These Boxes</h1>
+    <p>
+      I'm just trying to align these boxes properly and see how good I can get
+      at this.
+    </p>
+
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
     </div>
-</body>
+
+    <p>I'm having a hard time aligning the boxes to the center.</p>
+  </body>
 </html>
