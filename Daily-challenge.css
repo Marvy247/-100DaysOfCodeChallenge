@@ -1,3 +1,9 @@
+    body {
+        text-align: center;
+        background-color: rgb(233, 215, 207);
+        margin: 50px;
+      }
+     
      h1 {
         font-family: 'Fira Sans';
         text-align: center;
@@ -17,6 +23,7 @@
 
       a:hover{
         text-decoration: underline;
+        color: #f00;
       }
 
       #todays-challenge {
@@ -24,3 +31,11 @@
         font-weight: bold;
         font-size: 52px;
       }
+
+      img {
+        width: 250px;
+        height: 200px;
+        border-color: rgb(233, 215, 207);
+      }
+
+      
